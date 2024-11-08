@@ -6,7 +6,7 @@ const Hero = () => {
     const image = { uri: 'https://portfolio-woad-nine-59.vercel.app/_next/static/media/heroBackground.b79711da.jpg' };
 
     return (
-        <View style={styles.heroView}>
+        <View>
             <ImageBackground source={image} resizeMode="cover" style={styles.backGroundImage} >
                 <View style={styles.containerView}>
                     <Text style={styles.textColor}>Md. Takbir Gazi <Graduation name="graduation-cap" size={30} color="#4F8EF7" /></Text>
@@ -22,9 +22,6 @@ const Hero = () => {
 export default Hero;
 
 const styles = StyleSheet.create({
-    heroView: {
-        flex: 1,
-    },
     backGroundImage: {
         height: 250,
         filter: 'grayscale(100%)',

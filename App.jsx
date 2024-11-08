@@ -1,12 +1,16 @@
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import React from 'react';
 import Hero from './src/components/Hero';
+import About from './src/components/About';
 
 const App = () => {
   return (
-    <View style={styles.mainBodyBackground}>
+    <ScrollView style={styles.mainBodyBackground}>
       <Hero />
-    </View>
+      <View>
+        <About />
+      </View>
+    </ScrollView >
   );
 };
 
