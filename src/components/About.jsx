@@ -1,7 +1,7 @@
 import { Image, Linking, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import SectionHeader from './SectionHeader';
-import EmailIcon from 'react-native-vector-icons/Ionicons';
+import EmailIcon from 'react-native-vector-icons/FontAwesome';
 import CallIcon from 'react-native-vector-icons/Zocial';
 import AddressIcon from 'react-native-vector-icons/Fontisto';
 import SocialIcons from 'react-native-vector-icons/AntDesign';
@@ -27,7 +27,7 @@ const About = () => {
                 <Image style={styles.aboutImage} source={image} />
 
                 <View style={styles.infoView}>
-                    <Text style={styles.contactInfo}><EmailIcon name="mail" size={17} color="#ffff" /> Email : </Text>
+                    <Text style={styles.contactInfo}><EmailIcon name="envelope" size={17} color="#ffff" /> Email : </Text>
                     <TouchableOpacity onPress={() => handleContactInfoPress('mailto:takbirgazibd@gmail.com')}>
                         <Text style={styles.infoColor}> takbirgazibd@gmail.com</Text>
                     </TouchableOpacity>
@@ -53,7 +53,7 @@ const About = () => {
                     <TouchableOpacity onPress={() => handleIconPress('https://www.instagram.com/takbirgazibd')}><SocialIcons name="instagram" size={30} color="#ffff" /></TouchableOpacity>
                 </View>
                 <View style={styles.socialIconsView}>
-                    <TouchableOpacity> <Text style={styles.downloadResumeText}>Download Resume</Text> </TouchableOpacity>
+                    <TouchableOpacity onPress={() => handleIconPress('https://drive.google.com/file/d/1S51nSx-wXBZWXybeMGwm3LDbhoaQkSJJ/view')} style={styles.downloadTouch}> <Text style={styles.downloadResumeText}>My Resume</Text> </TouchableOpacity>
                 </View>
 
             </View>
